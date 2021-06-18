@@ -12,8 +12,8 @@
 ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   list-style: none;
 }
 
@@ -33,5 +33,11 @@ ul li p {
 
 ul li h2 {
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  ul .quote__2 {
+    grid-column: auto/span 2;
+  }
 }
 /*# sourceMappingURL=main.css.map */
